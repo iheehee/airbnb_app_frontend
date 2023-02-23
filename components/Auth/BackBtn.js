@@ -14,4 +14,4 @@ export default () => (
   <Container>
     <Ionicons name={isAndroid ? "md-arrow-down" : "ios-arrow-down"} size={28} />
   </Container>
-);
+)

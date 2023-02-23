@@ -5,4 +5,4 @@ export default () => (
     <View style={{ justifyContent: "center",  alignItems: "center", flex: 1 }}>
         <Text>SignIn</Text>
     </View>
-)
+);
