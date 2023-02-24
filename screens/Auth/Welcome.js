@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/native";
 import { StatusBar } from "react-native";
 import { BlurView } from "expo-blur";
-import Btn from "../components/Auth/Btn";
+import Btn from "../../components/Auth/Btn";
 
 const LOGO_URL =
   "https://ebenezersuites.com/wp-content/uploads/2016/06/airbnb-logo-266x300@2x.png";
@@ -17,11 +17,14 @@ const Image = styled.Image`
 `;
 
 const Logo = styled.Image`
+  margin-top: 200px;
   width: 70px;
   height: 70px;
 `;
 
-const BtnContainer = styled.View``;
+const BtnContainer = styled.View`
+  margin-top:50px;
+`;
 
 export default ({ navigation }) => {
   const goToSignUp = () => navigation.navigate("SignUp");
@@ -44,7 +47,7 @@ export default ({ navigation }) => {
         <Btn onPress={goToSignIn} text={"Sign In"} />
       </BtnContainer>
     </BlurView>
-    <Image source={require("../assets/vacation.jpg")} />
+    <Image source={require("../../assets/vacation.jpg")} />
     <StatusBar barStyle="light-content" />
   </Container>
     ); 

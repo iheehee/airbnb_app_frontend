@@ -3,6 +3,8 @@ import styled from "styled-components/native";
 import { Platform, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+
+
 const isAndroid = Platform.OS === "android";
 
 const Container = styled.View`
