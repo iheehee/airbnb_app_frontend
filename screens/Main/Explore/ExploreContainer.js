@@ -3,8 +3,8 @@ import ExplorePresenter from "./ExplorePresenter";
 
 export default ({ getRooms, rooms, page }) => {
     useEffect(() => {
-      getRooms();
-    }, []);
+      getRooms(page);
+    }, [page]);
     return <ExplorePresenter rooms={rooms} />;
   };
   
